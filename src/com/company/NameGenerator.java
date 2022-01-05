@@ -1,10 +1,15 @@
 package com.company;
 
 public class NameGenerator {
-String firstName = "Elvis";
-String lastName = "Aibangbee";
+public String firstName;
+public String lastName;
 
-    public static void generateFullName(){
+    public NameGenerator(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
+    public static String generateFullName(String firstName , String lastName){
+    return firstName + " " + lastName;
     }
 }
